@@ -22,3 +22,45 @@ select,
 textarea {
     max-width: 280px;
 }
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: skyblue;
+    background-color: darkslategrey;
+}
+
+/*Course layout*/
+.course {
+    list-style: none;
+}
+.course > li {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+.course > li > .date {
+            text-align: center;
+            background-color: #d41d50;
+            color: white;
+            width: 60px;
+            border-radius: 8px;
+        }
+
+.course > li > .details {
+            position: absolute;
+            top: 0px;
+            left: 70px;
+            display: grid;
+        }
+
+.course > li .action {
+            display: none;
+            left: 70px;
+            position: absolute;
+        }
+
+        .course > li:hover .action {
+            display: block;
+        }
